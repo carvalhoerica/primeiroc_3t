@@ -30,7 +30,7 @@ function cubo(){
 }
 function moeda(atual){
     return atual.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
-
+}
 function mat(){  
     let v = document.getElementById("valor").value;
     let j = document.getElementById("juros").value;
@@ -58,29 +58,9 @@ function mat(){
     for(let i=1; i<=t; i++){
         r = v * (1+(j/100));
         v = r;
-        document.write("Mês " + i + " = " + moeda(r) + "<br>");
+        //document.write("Mês " + i + " = " + moeda(r) + "<br>");
+        
     }
-    document.write("Resultado " + moeda(r));
+    document.getElementById("totalGeral").innerHTML = "Total: " +moeda(r);
+    //document.write("Resultado " + moeda(r));
 }
-}
-function media(){
-    let n1 = document.getElementById("v1").value
-    let n2 = document.getElementById("v2").value
-    let n3 = document.getElementById("v3").value
-    let r = (Number(n1) + Number(n2) + Number(n3))/3;
-    document.getElementById("resultado").innerHTML = "Média : " + r;
-}
-function soma(){
-    let n1 = document.getElementById("v1").value
-    let n2 = document.getElementById("v2").value
-    let n3 = document.getElementById("v3").value
-    let r = (Number(n1) + Number(n2) + Number(n3));
-    document.getElementById("resultado").innerHTML = "Soma : " + r;
-}
-function subtração(){
-    let n1 = document.getElementById("v1").value
-    let n2 = document.getElementById("v2").value
-    let n3 = document.getElementById("v3").value
-    let r = (Number(n1) - Number(n2) - Number(n3));
-    document.getElementById("resultado").innerHTML = "Subtração : " + r;
- }
