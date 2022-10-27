@@ -1,1 +1,13 @@
-
+#spTotal{
+    background: rgb(27, 27, 27);
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.splista{
+    background: blue;
+    border-radius: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 200px;
+}
