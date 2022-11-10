@@ -1,13 +1,69 @@
-#spTotal{
-    background: rgb(27, 27, 27);
+body {
+    background: rgb(117, 117, 117);
+}
+#calculadora {
+    background: rgb(77, 77, 77);
+    width: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px rgb(23, 23, 23);
+    position: absolute;
+    left: 40%;
+    top: 15%;
+}
+
+#calculadoraESG {
+    background: rgb(77, 77, 77);
+    width: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px rgb(23, 23, 23);
+    position: absolute;
+    left: 10%;
+    top: 15%;
+}
+#calculadora input {
+    background: rgb(19, 19, 19);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 5px;
+}
+#calculadora input :focus {
+    background: white;
+    color: rgb(0, 0, 0);
+}
+#calculadora button {
+    background: rgb(24, 24, 24);
     color: white;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 10px;
+}
+#calculadora button:hover{
+    background: rgb(114, 87, 91);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+#sptotal {
+    background: rgb(17, 17, 17);
+    color: rgb(255, 255, 255);
     border-radius: 10px;
     padding: 5px;
     font-family: 'Courier New', Courier, monospace;
 }
-.splista{
-    background: blue;
+.spLista {
+    background: rgb(233, 213, 233);
     border-radius: 10px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: red;
     width: 200px;
+}
+.calcF {
+    display: none;
+}
+#calcFin:checked + #calculadora .calcF {
+    display: block;
+}
+#calcFin {
+    display: none;
 }
